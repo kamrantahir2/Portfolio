@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        raleway: ["raleway", "sans-serif"],
+        permanentMarker: ["Permanent Marker", "sans-serif"],
       },
     },
   },

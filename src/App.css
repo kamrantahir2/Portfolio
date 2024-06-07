@@ -9,3 +9,12 @@
   height: 400px;
   border-radius: 50px;
 }
+
+.hero {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, darkblue, rgb(8, 234, 255)) 1;
+}
+
+.pic {
+  height: 20rem;
+}
