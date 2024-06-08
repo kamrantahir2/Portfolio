@@ -28,6 +28,15 @@ const Landing = () => {
             I build full-stack applications using React & NodeJS and backends
             using Java and Spring Boot.
           </h2>
+
+          <div className="flex ml-48 justify-start mt-12">
+            <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 border-none text-gray-50 hover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 w-36 ">
+              My Github
+            </button>
+            <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 ml-12 w-36 h-12">
+              My Projects
+            </button>
+          </div>
         </div>
       </div>
 
