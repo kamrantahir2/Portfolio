@@ -31,7 +31,7 @@ const Landing = () => {
             using Java and Spring Boot.
           </h2>
 
-          <div className="md:flex md:ml-48 justify-start mt-12">
+          <div className="flex justify-center md:justify-start md:ml-48 mt-12">
             <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 border-none text-gray-50 hover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 w-36 ">
               My Github
             </button>
