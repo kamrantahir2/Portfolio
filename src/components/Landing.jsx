@@ -70,11 +70,12 @@ const Landing = () => {
           <div className="w-5/12 h-1 bg-gradient-to-r from-green-500 to-blue-300 mt-4 m-auto"></div>
         </div>
 
-        <div className="showcase">
-          <div className="mt-12">
-            <div className="grouped">
+        <div className="showcase container m-auto">
+          <div className="mt-12 grid grid-cols-3">
+            <div className="grouped mx-10">
               <h3 className="text-3xl">Languages</h3>
-              <div className="icons mt-8">
+              <div className="divider"></div>
+              <div className="icons gap-4  m-auto grid-cols-2  grid mt-8">
                 <div className="icon">
                   <img
                     src="./js.png"
@@ -101,9 +102,10 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="grouped">
-              <h3 className="text-3xl mt-4">Libraries & Frameworks</h3>
-              <div className="icons mt-8">
+            <div className="grouped mx-10">
+              <h3 className="text-3xl ">Libraries & Frameworks</h3>
+              <div className="divider"></div>
+              <div className="icons mt-8 gap-4 grid grid-cols-3 ">
                 <div className="icon">
                   <img
                     src="./nodejs.png"
@@ -134,9 +136,10 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="grouped">
-              <h3 className="text-3xl mt-4">Databases</h3>
-              <div className="icons mt-8">
+            <div className="grouped mx-10">
+              <h3 className="text-3xl ">Databases</h3>
+              <div className="divider"></div>
+              <div className="icons mt-8 grid gap-4 grid-cols-3 ">
                 <div className="icon">
                   <img
                     src="./postgresql.png"
