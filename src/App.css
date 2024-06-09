@@ -5,8 +5,7 @@
 .landing-bg {
   background-image: url("./landingBg.jpg");
   margin: auto;
-  width: 1000px;
-  height: 400px;
+
   border-radius: 50px;
 }
 
@@ -17,4 +16,10 @@
 
 .pic {
   height: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-bottom: -200px;
+  }
 }
