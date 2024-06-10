@@ -9,7 +9,7 @@
   border-radius: 50px;
 }
 
-.hero {
+.landing {
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, darkblue, rgb(8, 234, 255)) 1;
 }
