@@ -17,7 +17,7 @@ const Landing = () => {
               rotate: 0,
             }}
           >
-            {/* <motion.div
+            <motion.div
               className="bg-[url('./landingBg.jpg')] m-auto rounded-3xl w-2/3 h-96 bg-no-repeat"
               animate={{ backgroundSize: "100%" }}
               initial={{ backgroundSize: "200%" }}
@@ -29,8 +29,7 @@ const Landing = () => {
                 repeatDelay: 0.2,
               }}
               whileHover={{ scale: 1.1, rotate: 2 }}
-            /> */}
-            <div className="bg-[url('./landingBg.jpg')] m-auto rounded-3xl w-2/3 h-96 bg-no-repeat"></div>
+            />
           </Slide>
         </div>
 
