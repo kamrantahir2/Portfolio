@@ -43,7 +43,7 @@ const Landing = () => {
               Kamran Tahir
             </h1>
 
-            <h2 className=" text-left mt-16 text-2xl md:text-4xl tracking-wide w-9/12 m-auto font-medium">
+            <h2 className=" text-left mt-24 md:mt-16 text-2xl md:text-4xl tracking-wide w-9/12 m-auto font-medium">
               I build full-stack applications using React & NodeJS and APIs
               using Java and Spring Boot.
             </h2>
