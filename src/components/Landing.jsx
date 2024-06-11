@@ -179,6 +179,14 @@ const Landing = () => {
                     </div>
                     <div className="icon">
                       <img
+                        src="./framer-motion.png"
+                        className="w-14 m-auto"
+                        alt=""
+                      />
+                      <h2>Framer Motion</h2>
+                    </div>
+                    <div className="icon">
+                      <img
                         src="./bootstrap.png"
                         className="w-14 m-auto"
                         alt=""
