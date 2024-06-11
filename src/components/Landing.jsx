@@ -51,13 +51,13 @@ const Landing = () => {
         </div>
       </div>
 
-      <Fade duration={1500} cascade triggerOnce>
+      <Fade duration={1000} cascade triggerOnce>
         <div className="w-8/12 mt-12 m-auto">
           <h1 className="font-semibold text-6xl">About Me</h1>
           <div className="w-3/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
-          <Slide duration={1500} triggerOnce>
+          <Slide duration={1000} triggerOnce>
             <h3 className="mt-8 mb-20 text-2xl lg:ml-28 m-auto leading-relaxed md:text-left col-span-10 lg:col-span-1  lg:w-full w-10/12">
               I am a full-stack developer with a passion for problem solving and
               expanding my knowledge. Originally focusing on building backends
