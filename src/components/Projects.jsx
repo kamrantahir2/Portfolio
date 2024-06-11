@@ -1,5 +1,5 @@
 import { projects } from "../data";
-import { motion } from "framer-motion";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
@@ -21,25 +21,31 @@ const Projects = () => {
       <div className="grid grid-cols-1 my-12 lg:grid-cols-2 gap-12">
         {projects.map((project) => {
           return (
-            <div
-              className="card mx-8 lg:mx-24 my-4 lg:my-12 p-4 bg-black shadow-xl "
-              key={project.image}
-            >
-              <figure>
-                <img className="rounded-3xl" src={project.image} alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">{project.title}</h2>
-                <p className="pt-4">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  className="card-actions justify-end"
-                >
-                  <button className="btn btn-primary">Learn More</button>
-                </a>
+            <Fade duration={1500} cascade>
+              <div
+                className="card mx-8 lg:mx-24 my-4 lg:my-12 p-4 bg-black shadow-xl "
+                key={project.image}
+              >
+                <figure>
+                  <img
+                    className="rounded-3xl"
+                    src={project.image}
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">{project.title}</h2>
+                  <p className="pt-4">{project.description}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="card-actions justify-end"
+                  >
+                    <button className="btn btn-primary">Learn More</button>
+                  </a>
+                </div>
               </div>
-            </div>
+            </Fade>
           );
         })}
       </div>
