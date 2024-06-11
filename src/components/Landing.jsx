@@ -44,7 +44,7 @@ const Landing = () => {
             </h1>
 
             <h2 className=" text-left mt-16 text-2xl md:text-4xl tracking-wide w-9/12 m-auto font-medium">
-              I build full-stack applications using React & NodeJS and backends
+              I build full-stack applications using React & NodeJS and APIs
               using Java and Spring Boot.
             </h2>
           </Slide>
