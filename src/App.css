@@ -2,13 +2,6 @@
   text-align: center;
 }
 
-.landing-bg {
-  background-image: url("./landingBg.jpg");
-  margin: auto;
-
-  border-radius: 50px;
-}
-
 .landing {
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, darkblue, rgb(8, 234, 255)) 1;

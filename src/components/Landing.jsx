@@ -33,13 +33,13 @@ const Landing = () => {
           </Slide>
         </div>
 
-        <div className="relative  -inset-y-60 md:-inset-y-40 inline-block">
+        <div className="relative  -inset-y-60 md:-inset-y-40 inline-block ">
           <Slide duration={1000} triggerOnce cascade>
             <h3 className=" text-3xl text-wrap w-9/12 m-auto text-left">
               Hey, my name is
             </h3>
 
-            <h1 className="text-6xl md:text-9xl font-bold bg-gradient-to-r from-orange-500 to-yellow-300 text-transparent bg-clip-text font-permanentMarker">
+            <h1 className="text-6xl md:text-9xl font-bold bg-gradient-to-r from-orange-500 to-yellow-300 text-transparent bg-clip-text font-permanentMarker tracking-widest">
               Kamran Tahir
             </h1>
 
