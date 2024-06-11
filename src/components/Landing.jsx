@@ -18,7 +18,7 @@ const Landing = () => {
             }}
           >
             <motion.div
-              className="bg-[url('/landingBg.png')] m-auto rounded-3xl w-2/3 h-96 bg-no-repeat"
+              className="bg-[url('/landingBg.png')] m-auto rounded-3xl w-full lg:w-2/3 h-96 bg-no-repeat"
               animate={{ backgroundSize: "100%" }}
               initial={{ backgroundSize: "200%" }}
               transition={{
