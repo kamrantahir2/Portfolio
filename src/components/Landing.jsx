@@ -53,10 +53,8 @@ const Landing = () => {
 
       <Fade duration={1500} cascade triggerOnce>
         <div className="w-8/12 mt-12 m-auto">
-          <Fade triggerOnce>
-            <h1 className="font-semibold text-6xl">About Me</h1>
-            <div className="w-3/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 my-4 m-auto"></div>
-          </Fade>
+          <h1 className="font-semibold text-6xl">About Me</h1>
+          <div className="w-3/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
           <Slide duration={1500} triggerOnce>
@@ -100,7 +98,7 @@ const Landing = () => {
           </div>
 
           <div className="showcase container m-auto">
-            <div className="mt-12 grid lg:grid-cols-3 grid-cols-2">
+            <div className="mt-12 grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1">
               <div className="grouped mx-10">
                 <Fade triggerOnce>
                   <h3 className="text-3xl">Languages</h3>
