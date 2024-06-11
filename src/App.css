@@ -7,8 +7,9 @@
   border-image: linear-gradient(to right, darkblue, rgb(8, 234, 255)) 1;
 }
 
-.pic {
-  height: 20rem;
+.card {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, darkblue, rgb(8, 234, 255)) 1;
 }
 
 @media only screen and (max-width: 600px) {
