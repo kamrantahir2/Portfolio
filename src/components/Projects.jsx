@@ -23,7 +23,7 @@ const Projects = () => {
           </h2>
         </Slide>
       </div>
-      <div className=" grid grid-cols-1 mt-32 lg:mt-24 mb-12 lg:grid-cols-2   gap-12 grid-flow-rows">
+      <div className=" grid grid-cols-1 mt-20 lg:mt-24 mb-12 lg:grid-cols-2   gap-12 grid-flow-rows">
         {projects.map((project) => {
           return (
             <Fade duration={1000} cascade key={project.image} triggerOnce>
