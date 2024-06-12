@@ -53,7 +53,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <Fade duration={800} cascade triggerOnce>
+      <Fade duration={700} cascade triggerOnce>
         <div className="w-8/12 mt-12 m-auto">
           <h1 className="font-semibold text-6xl">About Me</h1>
           <div className="w-3/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 my-4 m-auto"></div>
