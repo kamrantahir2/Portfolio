@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Fade, Slide } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
   return (
     <div className="">
       <div className="landing bg-black pt-12 ">
@@ -81,10 +83,10 @@ const Landing = () => {
 
       <div className="flex justify-center md:justify-start md:ml-48 mt-12">
         <Slide direction="right" triggerOnce>
-          <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 border-none text-gray-50 hover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 w-36 ">
-            My Github
-          </button>
-          <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 ml-12 w-36 h-12">
+          <button
+            className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 ml-12 w-36 h-12"
+            onClick={() => navigate("/projects")}
+          >
             My Projects
           </button>
         </Slide>
