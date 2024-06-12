@@ -32,4 +32,12 @@ export const projects = [
     image: "./library.jpg",
     link: "https://github.com/kamrantahir2/LibraryManagementRESTService",
   },
+  {
+    title: "Cinema Management System",
+    subtitle: "This API allows the user to book cinema seats",
+    description:
+      "This API allows the user to book and return seats in a cinema room. This API will also show statistics such as percentage of seats booked and daily earnings. ",
+    image: "./cinemaRoom.jpg",
+    link: "https://github.com/kamrantahir2/CinemaRESTService",
+  },
 ];
