@@ -92,143 +92,141 @@ const Landing = () => {
         </Slide>
       </div>
 
-      <Fade cascade triggerOnce>
-        <div className="mb-40 lg:pt-8">
-          <div className="w-8/12 mt-12 m-auto">
+      <div className="mb-40 lg:pt-8">
+        <div className="w-8/12 mt-12 m-auto">
+          <Slide triggerOnce cascade>
             <h1 className="font-semibold text-6xl">Languages and Tools</h1>
             <div className="w-5/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 mt-4 m-auto"></div>
-          </div>
+          </Slide>
+        </div>
 
-          <div className="showcase container m-auto">
-            <div className="mt-12 grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1">
-              <div className="grouped mx-10 lg:mb-0 mb-16">
-                <Fade triggerOnce>
-                  <h3 className="text-3xl">Languages</h3>
-                  <div className="divider"></div>
+        <div className="showcase container m-auto">
+          <div className="mt-12 grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1">
+            <div className="grouped mx-10 lg:mb-0 mb-16">
+              <Fade triggerOnce>
+                <h3 className="text-3xl">Languages</h3>
+                <div className="divider"></div>
+              </Fade>
+              <div className="icons gap-4  m-auto lg:grid-cols-3 grid-cols-2  grid mt-8">
+                <Fade cascade delay={500} duration={750} triggerOnce>
+                  <div className="icon">
+                    <img
+                      src="./js.png"
+                      className="w-14 rounded-xl m-auto"
+                      alt=""
+                    />
+                    <h2>JS</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./java.png" className="w-14 m-auto" alt="" />
+                    <h2 className="">Java</h2>
+                  </div>
+                  <div className="icon">
+                    <img
+                      src="./typescript.png"
+                      className="w-14 m-auto"
+                      alt=""
+                    />
+                    <h2>Typescript</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./html.png" className="w-14 m-auto" alt="" />
+                    <h2>HTML</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./css.png" className="w-14 m-auto" alt="" />
+                    <h2>CSS</h2>
+                  </div>
                 </Fade>
-                <div className="icons gap-4  m-auto lg:grid-cols-3 grid-cols-2  grid mt-8">
-                  <Fade cascade duration={500} triggerOnce>
-                    <div className="icon">
-                      <img
-                        src="./js.png"
-                        className="w-14 rounded-xl m-auto"
-                        alt=""
-                      />
-                      <h2>JS</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./java.png" className="w-14 m-auto" alt="" />
-                      <h2 className="">Java</h2>
-                    </div>
-                    <div className="icon">
-                      <img
-                        src="./typescript.png"
-                        className="w-14 m-auto"
-                        alt=""
-                      />
-                      <h2>Typescript</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./html.png" className="w-14 m-auto" alt="" />
-                      <h2>HTML</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./css.png" className="w-14 m-auto" alt="" />
-                      <h2>CSS</h2>
-                    </div>
-                  </Fade>
-                </div>
               </div>
-              <div className="grouped mx-10 lg:mb-0 mb-16">
-                <Fade triggerOnce>
-                  <h3 className="text-3xl ">Libraries & Frameworks</h3>
+            </div>
+            <div className="grouped mx-10 lg:mb-0 mb-16">
+              <Fade triggerOnce>
+                <h3 className="text-3xl ">Libraries & Frameworks</h3>
 
-                  <div className="divider"></div>
+                <div className="divider"></div>
+              </Fade>
+              <div className="icons mt-8 gap-4 grid lg:grid-cols-3 grid-cols-2 ">
+                <Fade
+                  cascade
+                  delay={500}
+                  duration={750}
+                  triggerOnce
+                  damping={0.3}
+                >
+                  <div className="icon">
+                    <img
+                      src="./nodejs.png"
+                      className="w-14 rounded-xl m-auto"
+                      alt=""
+                    />
+                    <h2>Node.js</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./physics.png" className="w-14 m-auto" alt="" />
+                    <h2>React</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./express.png" className="w-14 m-auto" alt="" />
+                    <h2>Express</h2>
+                  </div>
+                  <div className="icon">
+                    <img
+                      src="./springboot.png"
+                      className="w-14 m-auto"
+                      alt=""
+                    />
+                    <h2>Spring Boot</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./tailwind.png" className="w-14 m-auto" alt="" />
+                    <h2>Tailwind CSS</h2>
+                  </div>
+                  <div className="icon">
+                    <img
+                      src="./framer-motion.png"
+                      className="w-14 m-auto"
+                      alt=""
+                    />
+                    <h2>Framer Motion</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./bootstrap.png" className="w-14 m-auto" alt="" />
+                    <h2>Bootstrap</h2>
+                  </div>
                 </Fade>
-                <div className="icons mt-8 gap-4 grid lg:grid-cols-3 grid-cols-2 ">
-                  <Fade cascade duration={500} triggerOnce damping={0.4}>
-                    <div className="icon">
-                      <img
-                        src="./nodejs.png"
-                        className="w-14 rounded-xl m-auto"
-                        alt=""
-                      />
-                      <h2>Node.js</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./physics.png" className="w-14 m-auto" alt="" />
-                      <h2>React</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./express.png" className="w-14 m-auto" alt="" />
-                      <h2>Express</h2>
-                    </div>
-                    <div className="icon">
-                      <img
-                        src="./springboot.png"
-                        className="w-14 m-auto"
-                        alt=""
-                      />
-                      <h2>Spring Boot</h2>
-                    </div>
-                    <div className="icon">
-                      <img
-                        src="./tailwind.png"
-                        className="w-14 m-auto"
-                        alt=""
-                      />
-                      <h2>Tailwind CSS</h2>
-                    </div>
-                    <div className="icon">
-                      <img
-                        src="./framer-motion.png"
-                        className="w-14 m-auto"
-                        alt=""
-                      />
-                      <h2>Framer Motion</h2>
-                    </div>
-                    <div className="icon">
-                      <img
-                        src="./bootstrap.png"
-                        className="w-14 m-auto"
-                        alt=""
-                      />
-                      <h2>Bootstrap</h2>
-                    </div>
-                  </Fade>
-                </div>
               </div>
-              <div className="grouped mx-10">
-                <Fade triggerOnce>
-                  <h3 className="text-3xl ">Databases</h3>
+            </div>
+            <div className="grouped mx-10">
+              <Fade triggerOnce>
+                <h3 className="text-3xl ">Databases</h3>
 
-                  <div className="divider"></div>
+                <div className="divider"></div>
+              </Fade>
+              <div className="icons mt-8 grid lg:grid-cols-3 grid-cols-2 gap-8">
+                <Fade cascade delay={500} duration={750} triggerOnce>
+                  <div className="icon">
+                    <img
+                      src="./postgresql.png"
+                      className="w-14 rounded-xl m-auto"
+                      alt=""
+                    />
+                    <h2>PostgreSQL</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./mongodb.png" className="w-14 m-auto" alt="" />
+                    <h2>MongoDB</h2>
+                  </div>
+                  <div className="icon">
+                    <img src="./mysql.png" className="w-14 m-auto" alt="" />
+                    <h2>MySQL</h2>
+                  </div>
                 </Fade>
-                <div className="icons mt-8 grid lg:grid-cols-3 grid-cols-2 gap-8">
-                  <Fade cascade duration={500} triggerOnce>
-                    <div className="icon">
-                      <img
-                        src="./postgresql.png"
-                        className="w-14 rounded-xl m-auto"
-                        alt=""
-                      />
-                      <h2>PostgreSQL</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./mongodb.png" className="w-14 m-auto" alt="" />
-                      <h2>MongoDB</h2>
-                    </div>
-                    <div className="icon">
-                      <img src="./mysql.png" className="w-14 m-auto" alt="" />
-                      <h2>MySQL</h2>
-                    </div>
-                  </Fade>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </Fade>
+      </div>
     </div>
   );
 };
