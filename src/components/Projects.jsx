@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="">
       <div className="bg-black py-20 lg:py-40 portfolio-header">
-        <Slide triggerOnce direction="left" duration={1000}>
+        <Slide triggerOnce direction="left" cascade duration={1000}>
           <h1
             className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-orange-500 to-yellow-300 
       
@@ -14,10 +14,8 @@ const Projects = () => {
             My Projects
           </h1>
           <div className="w-6/12 lg:w-3/12 h-1 bg-gradient-to-r from-green-500 to-blue-300 mx-auto my-8"></div>
-        </Slide>
 
-        <Slide triggerOnce delay={500} direction="right">
-          <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12 m-auto font-medium ">
+          <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
             Here you will find the various projects that I have built. This list
             is ever-growing so check back regularly to see my latest works.
           </h2>
