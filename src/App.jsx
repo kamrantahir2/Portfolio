@@ -47,7 +47,7 @@ function App() {
             </ul>
           </div>
           <Link
-            className="btn btn-ghost text-xl bg-gradient-to-r from-orange-500 to-yellow-300 text-transparent bg-clip-text"
+            className="btn btn-ghost text-xl bg-gradient-to-r from-orange-500 to-yellow-300 text-transparent bg-clip-text font-permanentMarker tracking-widest"
             to="/"
           >
             Kamran Tahir

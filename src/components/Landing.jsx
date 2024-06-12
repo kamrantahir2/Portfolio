@@ -144,7 +144,7 @@ const Landing = () => {
                   <div className="divider"></div>
                 </Fade>
                 <div className="icons mt-8 gap-4 grid lg:grid-cols-3 grid-cols-2 ">
-                  <Fade cascade duration={500} triggerOnce>
+                  <Fade cascade duration={500} triggerOnce damping={0.4}>
                     <div className="icon">
                       <img
                         src="./nodejs.png"
