@@ -152,7 +152,7 @@ const Landing = () => {
                   delay={500}
                   duration={750}
                   triggerOnce
-                  damping={0.3}
+                  damping={0.2}
                 >
                   <div className="icon">
                     <img
