@@ -90,7 +90,7 @@ const Landing = () => {
             My Projects
           </button>
           <a href="https://github.com/kamrantahir2" target="_blank">
-            <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12 ml-12">
+            <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none text-gray-50 w-36 h-12 ml-12">
               My Github
             </button>
           </a>
