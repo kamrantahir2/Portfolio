@@ -17,19 +17,19 @@ export const projects = [
     link: "https://github.com/kamrantahir2/MealPlanner",
   },
   {
-    title: "Library Management System",
-    subtitle: "This program helps the user manage their library stock",
-    description:
-      "This API allows the user to add, delete books to a PostgreSQL database as well as allowing the user to rent out and return books",
-    image: "./library.jpg",
-    link: "https://github.com/kamrantahir2/LibraryManagementRESTService",
-  },
-  {
     title: "Cashing Up Program",
     subtitle: "Application built to help shopkeepers count their tills",
     description:
       "This program helps to speed up the till counting process for stores by automating calculations and limiting human error. This application reduced the time taken to count tills by 66%. ",
     image: "./cashingUpProgram.png",
     link: "https://github.com/kamrantahir2/CashingUpProgram_V2",
+  },
+  {
+    title: "Library Management System",
+    subtitle: "This program helps the user manage their library stock",
+    description:
+      "This API allows the user to add, delete books to a PostgreSQL database as well as allowing the user to rent out and return books",
+    image: "./library.jpg",
+    link: "https://github.com/kamrantahir2/LibraryManagementRESTService",
   },
 ];

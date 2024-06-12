@@ -13,29 +13,23 @@ const Projects = () => {
       </h1>
       <div className="w-6/12 lg:w-3/12 h-1 bg-gradient-to-r from-green-500 to-blue-300 mx-auto my-8"></div>
 
-      <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12 m-auto font-medium">
+      <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12 m-auto font-medium ">
         Here are the various projects that I have built. This list is
         ever-growing so check back regularly to see my latest works.
       </h2>
 
-      <div className="grid grid-cols-1 my-12 lg:grid-cols-2 gap-12">
+      <div className=" grid grid-cols-1 my-12 lg:grid-cols-2   gap-12 grid-flow-rows">
         {projects.map((project) => {
           return (
-            <Fade duration={1500} cascade>
-              <div
-                className="card mx-8 lg:mx-24 my-4 lg:my-12 p-4 bg-black shadow-xl "
-                key={project.image}
-              >
-                <figure>
-                  <img
-                    className="rounded-3xl"
-                    src={project.image}
-                    alt="Shoes"
-                  />
-                </figure>
+            <Fade duration={1500} cascade key={project.image}>
+              <div className="card mx-8 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl">
+                <img className="rounded-3xl card-img" src={project.image} />
+
                 <div className="card-body">
-                  <h2 className="card-title">{project.title}</h2>
-                  <p className="pt-4">{project.description}</p>
+                  <h2 className="card-title border-b-2 border-cyan-500 pb-5 lg:w-9/12">
+                    {project.title}
+                  </h2>
+                  <p className="p-4 lg:h-40">{project.description}</p>
                   <a
                     href={project.link}
                     target="_blank"
