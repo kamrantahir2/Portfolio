@@ -102,7 +102,7 @@ const Landing = () => {
 
         <div className="showcase container m-auto">
           <div className="mt-12 grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1">
-            <div className="grouped mx-10 lg:mb-0 mb-16">
+            <div className="grouped mx-10 lg:mb-0 mb-20">
               <Fade triggerOnce>
                 <h3 className="text-3xl">Languages</h3>
                 <div className="divider"></div>
@@ -140,7 +140,7 @@ const Landing = () => {
                 </Fade>
               </div>
             </div>
-            <div className="grouped mx-10 lg:mb-0 mb-16">
+            <div className="grouped mx-10 lg:mb-0 mb-20">
               <Fade triggerOnce>
                 <h3 className="text-3xl ">Libraries & Frameworks</h3>
 
