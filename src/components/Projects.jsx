@@ -25,7 +25,7 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <Fade duration={1000} cascade key={project.image} triggerOnce>
-              <div className="card mx-8 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl">
+              <div className="card mx-8 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl pt-8">
                 <img className="rounded-3xl card-img" src={project.image} />
 
                 <div className="card-body">
@@ -38,7 +38,9 @@ const Projects = () => {
                     target="_blank"
                     className="card-actions justify-end"
                   >
-                    <button className="btn btn-primary">Learn More</button>
+                    <button className="btn bg-cyan-300 text-black font-bold">
+                      Learn More
+                    </button>
                   </a>
                 </div>
               </div>
