@@ -1,7 +1,12 @@
 import { projects } from "../data";
 import { Fade, Slide } from "react-awesome-reveal";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="">
       <div className="bg-black py-20 lg:py-40 portfolio-header">
