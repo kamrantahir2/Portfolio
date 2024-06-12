@@ -70,7 +70,7 @@ const Contact = () => {
         </div>
       )}
 
-      <h2 className=" text-center lg:text-left mt-12 lg:mt-24 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
+      <h2 className=" text-center mt-12 lg:mt-24 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium">
         If you have any questions feel free to contact me using the form below:
       </h2>
 
