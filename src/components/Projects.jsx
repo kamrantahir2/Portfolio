@@ -21,7 +21,7 @@ const Projects = () => {
       <div className=" grid grid-cols-1 my-12 lg:grid-cols-2   gap-12 grid-flow-rows">
         {projects.map((project) => {
           return (
-            <Fade duration={1500} cascade key={project.image}>
+            <Fade duration={1500} cascade key={project.image} triggerOnce>
               <div className="card mx-8 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl">
                 <img className="rounded-3xl card-img" src={project.image} />
 
