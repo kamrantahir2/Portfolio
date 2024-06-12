@@ -19,11 +19,12 @@ const Projects = () => {
             My Projects
           </h1>
           <div className="w-6/12 lg:w-3/12 h-1 bg-gradient-to-r from-green-500 to-blue-300 mx-auto my-8"></div>
+
+          <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
+            Here you will find the various projects that I have built. This list
+            is ever-growing so check back regularly to see my latest works.
+          </h2>
         </Slide>
-        <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
-          Here you will find the various projects that I have built. This list
-          is ever-growing so check back regularly to see my latest works.
-        </h2>
       </div>
       <div className=" grid grid-cols-1 mt-20 lg:mt-24 mb-12 lg:grid-cols-2   gap-12 grid-flow-rows">
         {projects.map((project) => {
