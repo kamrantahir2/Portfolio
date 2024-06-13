@@ -74,9 +74,9 @@ const Contact = () => {
         If you have any questions feel free to contact me using the form below:
       </h2>
 
-      <div className="w-6/12 m-auto my-12">
+      <div className=" w-10/12 md:w-6/12 m-auto my-12">
         <form onSubmit={handleSubmit}>
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center gap-2 overflow-hidden">
             Name
             <input
               type="text"
@@ -98,7 +98,7 @@ const Contact = () => {
               required
             />
           </label>
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center gap-2 overflow-hidden">
             Message
             <input
               type="text"
