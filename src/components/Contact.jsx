@@ -87,7 +87,7 @@ const Contact = () => {
               required
             />
           </label>
-          <label className="input input-bordered flex items-center gap-2">
+          <label className="input input-bordered flex items-center gap-2 overflow-hidden">
             Email
             <input
               type="email"
