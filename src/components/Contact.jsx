@@ -87,7 +87,7 @@ const Contact = () => {
               required
             />
           </label>
-          <label className="input input-bordered flex items-center gap-2 overflow-hidden">
+          <label className="input input-bordered flex items-center gap-2 overflow-hidden my-3">
             Email
             <input
               type="email"
@@ -98,16 +98,12 @@ const Contact = () => {
               required
             />
           </label>
-          <label className="input input-bordered flex items-center gap-2 overflow-hidden">
-            Message
-            <input
-              type="text"
-              className="grow"
-              value={message}
+          <label className="textarea textarea-bordered flex items-center gap-2 overflow-hidden">
+            <p className="text-base">Message</p>
+            <textarea
+              className="textarea textarea-ghost h-24 w-full focus:text-white text-white"
               placeholder="Type here ..."
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
+            ></textarea>
           </label>
           <button type="submit" className="bg-cyan-300 text-black mt-6">
             Submit
