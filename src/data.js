@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Portfolio Website (This Website)",
+    subtitle: "Full stack application built using JavaScript and React",
+    description:
+      "This is my portfolio website built to showcase my various projects. This website was built using React and styled using Tailwind CSS and Daisy UI as well as animations using Framer Motion and React Awesome Reveal.",
+    image: "./portfolio.png",
+    link: "https://kamran-tahir-portfolio.netlify.app//",
+  },
+  {
     title: "Article Saver",
     subtitle: "Full stack application built using JavaScript and React",
     description:
