@@ -71,7 +71,22 @@ const Contact = () => {
       )}
 
       <h2 className=" text-center mt-12 lg:mt-24 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium">
-        If you have any questions feel free to contact me using the form below:
+        If you would like to know more, click on the logo below and send me a
+        message on LinkedIn:
+        <a
+          href="http://www.linkedin.com/in/kamran-tahir-577851286"
+          target="_blank"
+        >
+          <img
+            src="./linkedin.png"
+            alt=""
+            className="w-4/12 lg:w-1/12 mt-8 m-auto"
+          />
+        </a>
+      </h2>
+
+      <h2 className=" text-center mt-12 lg:mt-12 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium">
+        Alternatively, you can send me a message using the form below:
       </h2>
 
       <div className=" w-10/12 md:w-6/12 m-auto my-12">
@@ -80,7 +95,7 @@ const Contact = () => {
             Name
             <input
               type="text"
-              className="grow"
+              className="grow ml-4"
               value={name}
               placeholder="John Smith"
               onChange={(e) => setName(e.target.value)}
@@ -92,7 +107,7 @@ const Contact = () => {
             <input
               type="email"
               value={email}
-              className="grow"
+              className="grow ml-4"
               placeholder="johnsmith@email.com"
               onChange={(e) => setEmail(e.target.value)}
               required
