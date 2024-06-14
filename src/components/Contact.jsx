@@ -98,7 +98,7 @@ const Contact = () => {
               required
             />
           </label>
-          <label className="textarea textarea-bordered flex items-center gap-2 overflow-hidden">
+          <label className="textarea textarea-bordered flex items-start gap-2 overflow-hidden">
             <p className="text-base">Message</p>
             <textarea
               className="textarea textarea-ghost h-24 w-full focus:text-white text-white"
