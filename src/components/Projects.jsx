@@ -31,24 +31,26 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <Fade duration={1000} cascade key={project.image} triggerOnce>
-              <div className="card mx-8 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl pt-8">
-                <img className="rounded-3xl " src={project.image} />
+              <div className="card mx-4 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl pt-8">
+                <img className="rounded-3xl card-img" src={project.image} />
 
                 <div className="card-body">
                   <h2 className="card-title border-b-2 border-cyan-500 pb-5 lg:w-9/12">
                     {project.title}
                   </h2>
-                  <p className="lg:p-4 lg:h-40">{project.description}</p>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    className="card-actions justify-end"
-                  >
-                    <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold">
-                      Learn More
-                    </button>
-                  </a>
+                  <p className="lg:p-4 md:mb-12  lg:h-52">
+                    {project.description}
+                  </p>
                 </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="card-actions justify-end"
+                >
+                  <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold">
+                    Learn More
+                  </button>
+                </a>
               </div>
             </Fade>
           );
