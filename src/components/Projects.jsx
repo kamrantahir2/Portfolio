@@ -3,9 +3,9 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useEffect } from "react";
 
 const Projects = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <div className="">
@@ -31,7 +31,7 @@ const Projects = () => {
         {projects.map((project) => {
           return (
             <Fade duration={1000} cascade key={project.image} triggerOnce>
-              <div className="card mx-4 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl pt-8">
+              <div className="card mx-4 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl py-8 ">
                 <img className="rounded-3xl card-img" src={project.image} />
 
                 <div className="card-body">
@@ -42,12 +42,23 @@ const Projects = () => {
                     {project.description}
                   </p>
                 </div>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4 mx-3">
+                  {project.tags.map((tag) => {
+                    return (
+                      <div key={tag} className="">
+                        <p className=" rounded-full bg-blue-500 p-1 text-black font-semibold">
+                          {tag}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
                 <a
                   href={project.link}
                   target="_blank"
                   className="card-actions justify-end"
                 >
-                  <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold">
+                  <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold ">
                     Learn More
                   </button>
                 </a>
