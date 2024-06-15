@@ -38,11 +38,11 @@ const Projects = () => {
                   <h2 className="card-title border-b-2 border-cyan-500 pb-5 lg:w-9/12">
                     {project.title}
                   </h2>
-                  <p className="lg:p-4 md:mb-12 text-lg lg:h-52">
+                  <p className="lg:p-4 md:mb-12 text-lg lg:h-52 leading-8">
                     {project.description}
                   </p>
                 </div>
-                <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mb-4 mx-3">
+                <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mb-4 mx-3 mt-8">
                   {project.tags.map((tag) => {
                     return (
                       <div key={tag} className="">
