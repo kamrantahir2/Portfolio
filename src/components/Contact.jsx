@@ -97,7 +97,7 @@ const Contact = () => {
 
       <div className=" w-10/12 md:w-6/12 m-auto my-12">
         <form onSubmit={handleSubmit}>
-          <Fade duration={750} cascade triggerOnce>
+          <Fade duration={500} cascade triggerOnce>
             <label className="input input-bordered flex items-center gap-2 overflow-hidden">
               Name
               <input

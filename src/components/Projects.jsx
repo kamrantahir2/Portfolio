@@ -3,9 +3,9 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useEffect } from "react";
 
 const Projects = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="">
