@@ -38,15 +38,15 @@ const Projects = () => {
                   <h2 className="card-title border-b-2 border-cyan-500 pb-5 lg:w-9/12">
                     {project.title}
                   </h2>
-                  <p className="lg:p-4 md:mb-12  lg:h-52">
+                  <p className="lg:p-4 md:mb-12 text-lg lg:h-52">
                     {project.description}
                   </p>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4 mx-3">
+                <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mb-4 mx-3">
                   {project.tags.map((tag) => {
                     return (
                       <div key={tag} className="">
-                        <p className=" rounded-full bg-blue-500 p-1 text-black font-semibold">
+                        <p className=" rounded-full lg:bg-blue-500 lg:p-1 text-sm text-cyan-500  lg:text-black font-semibold">
                           {tag}
                         </p>
                       </div>
