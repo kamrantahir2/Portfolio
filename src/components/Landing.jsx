@@ -83,23 +83,25 @@ const Landing = () => {
 
       <div className="flex justify-center md:justify-start md:ml-48 mt-12">
         <Slide direction="right" triggerOnce>
-          <button
-            className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
-            onClick={() => navigate("/projects")}
-          >
-            My Projects
-          </button>
-          <a href="https://github.com/kamrantahir2" target="_blank">
-            <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none text-gray-50 w-36 h-12 mx-4">
-              My Github
+          <div className="">
+            <button
+              className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
+              onClick={() => navigate("/projects")}
+            >
+              My Projects
             </button>
-          </a>
-          <button
-            className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
-            onClick={() => navigate("/contact")}
-          >
-            Contact Me
-          </button>
+            <a href="https://github.com/kamrantahir2" target="_blank">
+              <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none text-gray-50 w-36 h-12 mx-4">
+                My Github
+              </button>
+            </a>
+            <button
+              className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12 my-4"
+              onClick={() => navigate("/contact")}
+            >
+              Contact Me
+            </button>
+          </div>
         </Slide>
       </div>
 
