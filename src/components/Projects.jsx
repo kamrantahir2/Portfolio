@@ -35,8 +35,14 @@ const Projects = () => {
                 <img className="rounded-3xl card-img" src={project.image} />
 
                 <div className="card-body">
-                  <h2 className="card-title border-b-2 border-cyan-500 pb-5 lg:w-9/12">
+                  <h2 className="card-title  lg:w-9/12 text-2xl">
                     {project.title}
+                  </h2>
+                  <h2
+                    className="text-left text-lg border-b-2 border-cyan-500 mt-2 pb-5
+                  pl-5"
+                  >
+                    - {project.subtitle}
                   </h2>
                   <p className="lg:p-4 md:mb-12 text-lg lg:h-52 leading-8">
                     {project.description}
@@ -58,7 +64,7 @@ const Projects = () => {
                   target="_blank"
                   className="card-actions justify-end"
                 >
-                  <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold ">
+                  <button className="btn m-auto lg:m-0 bg-cyan-300 text-black font-bold hover:bg-cyan-200">
                     Learn More
                   </button>
                 </a>
