@@ -27,12 +27,17 @@ const Projects = () => {
         </Slide>
       </div>
 
-      <div className=" grid grid-cols-1 mt-20 lg:mt-24 mb-12 lg:grid-cols-2 gap-12 grid-flow-rows">
-        {projects.map((project) => {
-          return (
-            <Fade duration={1000} cascade key={project.image} triggerOnce>
-              <div className="card mx-4 lg:mx-24 lg:my-12 p-4 bg-black shadow-xl py-8 ">
-                <img className="rounded-3xl card-img" src={project.image} />
+      <Fade cascade triggerOnce duration={750}>
+        <div className=" flex flex-row flex-wrap w-full mt-20 lg:mt-24 mb-12 lg:grid-cols-2 ">
+          {projects.map((project) => {
+            return (
+              <div
+                className="card mx-4 lg:mx-24 my-4 lg:my-12 p-4 bg-black shadow-xl py-8 md:w-4/12"
+                key={project.image}
+              >
+                <figure>
+                  <img className="rounded-3xl card-img" src={project.image} />
+                </figure>
 
                 <div className="card-body">
                   <h2 className="card-title  lg:w-9/12 text-2xl">
@@ -69,10 +74,10 @@ const Projects = () => {
                   </button>
                 </a>
               </div>
-            </Fade>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Fade>
     </div>
   );
 };
