@@ -2,72 +2,12 @@ import { motion } from "framer-motion";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import { SparklesCore } from "./sparkles";
+import { HeroHighlight, Highlight } from "./hero-highlight";
 
 import { cn } from "../lib/utils";
-import { Spotlight } from "./spotlight-new";
 
 const Landing = () => {
   const navigate = useNavigate();
-  const words = [
-    {
-      text: "Full-stack ",
-    },
-    {
-      text: "developer ",
-    },
-    {
-      text: "with ",
-    },
-    {
-      text: "a ",
-    },
-    {
-      text: "focus ",
-    },
-    {
-      text: "on ",
-    },
-    {
-      text: "intuitive ",
-      className: "text-blue-400",
-    },
-    {
-      text: "design ",
-      className: "text-blue-400",
-    },
-    {
-      text: ", ",
-      className: "",
-    },
-    {
-      text: "practical ",
-      className: "text-purple-400",
-    },
-    {
-      text: "solutions ",
-      className: "text-purple-400",
-    },
-    {
-      text: "and ",
-      className: "",
-    },
-    {
-      text: "solving ",
-      className: "text-green-400",
-    },
-    {
-      text: "real ",
-      className: "text-green-400",
-    },
-    {
-      text: "problems ",
-      className: "text-green-400",
-    },
-    {
-      text: ".",
-      className: "",
-    },
-  ];
 
   return (
     <div className="absolute top-20 w-full">
@@ -81,11 +21,17 @@ const Landing = () => {
               )}
             />
 
-            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4">
-              Kamran Tahir
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-12">
+              <Highlight className="text-blackdark:text-white">
+                Kamran
+              </Highlight>
+              <span className="hidden md:inline"> Tahir</span>
+            </h1>
+            <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4 md:hidden ">
+              Tahir
             </h1>
 
-            <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mb- mt-4 ">
+            <h3 className="md:text-2xl text-xl lg:text-3xl text-center text-white relative z-20 mb- mt-4 ">
               Full-stack developer with a focus on{" "}
               <span className="font-semibold text-blue-400">
                 intuitive design
@@ -101,7 +47,7 @@ const Landing = () => {
               .
             </h3>
 
-            <div className="w-[40rem] h-40 relative">
+            <div className="w-[40rem] h-40 relative mt-10">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
