@@ -15,8 +15,19 @@ const Landing = () => {
             </h1>
 
             <h3 className="md:text-2xl text-xl lg:text-2xl text-center text-white relative z-20 mb-4 ">
-              Full-stack developer with a quiet focus on intuitive design,
-              practical solutions, and solving real problems.
+              Full-stack developer with a focus on{" "}
+              <span className="font-semibold text-blue-400">
+                intuitive design
+              </span>
+              ,{" "}
+              <span className="font-semibold text-purple-400">
+                practical solutions
+              </span>
+              , and{" "}
+              <span className="font-semibold text-green-400">
+                solving real problems
+              </span>
+              .
             </h3>
 
             <div className="w-[40rem] h-40 relative">
@@ -32,7 +43,7 @@ const Landing = () => {
                 minSize={0.4}
                 maxSize={1}
                 particleDensity={1200}
-                className="w-full h-full"
+                className="md:w-full w-4/5 mx-auto h-full"
                 particleColor="#FFFFFF"
               />
 
