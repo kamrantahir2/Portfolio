@@ -11,9 +11,9 @@ const Landing = () => {
 
   return (
     <div className="absolute top-20 w-full">
-      <div className="landing  bg-black pt-12 ">
-        <div className="landing-container lg:pb-12">
-          <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
+      <div className="landing  bg-black ">
+        <div className="landing-container ">
+          <div className="relative  h-screen bg-white dark:bg-black">
             <div
               className={cn(
                 "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
@@ -21,7 +21,7 @@ const Landing = () => {
               )}
             />
 
-            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-12">
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-12 pt-56">
               <Highlight className="text-blackdark:text-white">
                 Kamran
               </Highlight>
@@ -47,7 +47,7 @@ const Landing = () => {
               .
             </h3>
 
-            <div className="w-[40rem] h-40 relative mt-10">
+            <div className="h-40 relative mt-10">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
