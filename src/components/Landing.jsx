@@ -10,11 +10,11 @@ const Landing = () => {
       <div className="landing bg-black pt-12 ">
         <div className="landing-container lg:pb-12">
           <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
-            <h1 className=" md:text-7xl text-6xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4">
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4">
               Kamran Tahir
             </h1>
 
-            <h3 className="md:text-2xl text-xl lg:text-2xl text-center text-white relative z-20 mb-4 ">
+            <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mb-4 ">
               Full-stack developer with a focus on{" "}
               <span className="font-semibold text-blue-400">
                 intuitive design
