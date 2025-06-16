@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
+import { SparklesCore } from "./sparkles";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -8,47 +9,37 @@ const Landing = () => {
     <div className="">
       <div className="landing bg-black pt-12 ">
         <div className="landing-container lg:pb-12">
-          <Slide
-            direction="up"
-            duration={1500}
-            triggerOnce
-            animate={{
-              x: 0,
-              y: 28,
-              scale: 1,
-              rotate: 0,
-            }}
-          >
-            <motion.div
-              className="bg-[url('/landingBg.png')] m-auto rounded-3xl w-full lg:w-2/3 h-96 bg-no-repeat"
-              animate={{ backgroundSize: "100%" }}
-              initial={{ backgroundSize: "200%" }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 75,
-                repeatType: "mirror",
-                repeatDelay: 0.2,
-              }}
-            />
-          </Slide>
-        </div>
-
-        <div className="relative  -inset-y-60 md:-inset-y-40 inline-block ">
-          <Slide duration={1000} triggerOnce cascade>
-            <h3 className=" text-3xl text-wrap w-9/12 m-auto text-left">
-              Hey, my name is
-            </h3>
-
-            <h1 className="text-6xl md:text-9xl font-bold bg-gradient-to-r from-orange-500 to-yellow-300 text-transparent bg-clip-text font-permanentMarker tracking-widest">
+          <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
+            <h1 className="md:text-7xl text-6xl lg:text-9xl font-bold text-center text-white relative z-20 mb-4">
               Kamran Tahir
             </h1>
 
-            <h2 className=" text-left mt-32 md:mt-16 text-2xl md:text-4xl tracking-wide w-9/12 m-auto font-medium">
-              I build full-stack applications using React & NodeJS and APIs
-              using Java and Spring Boot.
-            </h2>
-          </Slide>
+            <h3 className="md:text-2xl text-xl lg:text-2xl text-center text-white relative z-20 mb-4 ">
+              Full-stack developer with a quiet focus on intuitive design,
+              practical solutions, and solving real problems.
+            </h3>
+
+            <div className="w-[40rem] h-40 relative">
+              {/* Gradients */}
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+              <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+              <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+              {/* Core component */}
+              <SparklesCore
+                background="transparent"
+                minSize={0.4}
+                maxSize={1}
+                particleDensity={1200}
+                className="w-full h-full"
+                particleColor="#FFFFFF"
+              />
+
+              {/* Radial Gradient to prevent sharp edges */}
+              <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+            </div>
+          </div>
         </div>
       </div>
 
