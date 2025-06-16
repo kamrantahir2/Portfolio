@@ -122,7 +122,7 @@ const Landing = () => {
                 <div className="divider"></div>
               </Fade>
               <div className="icons gap-4  m-auto lg:grid-cols-3 grid-cols-2  grid mt-8">
-                <Fade cascade delay={500} duration={750} triggerOnce>
+                <Fade cascade delay={250} duration={750} triggerOnce damping={0.2}>
                   <div className="icon">
                     <img
                       src="./js.png"
@@ -163,7 +163,7 @@ const Landing = () => {
               <div className="icons mt-8 gap-4 grid lg:grid-cols-3 grid-cols-2 ">
                 <Fade
                   cascade
-                  delay={500}
+                  delay={250}
                   duration={750}
                   triggerOnce
                   damping={0.2}
@@ -218,7 +218,7 @@ const Landing = () => {
                 <div className="divider"></div>
               </Fade>
               <div className="icons mt-8 grid lg:grid-cols-3 grid-cols-2 gap-8">
-                <Fade cascade delay={500} duration={750} triggerOnce>
+                <Fade cascade delay={250} duration={750} triggerOnce damping={0.2}>
                   <div className="icon">
                     <img
                       src="./postgresql.png"
