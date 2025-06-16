@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import { SparklesCore } from "./sparkles";
-import { HeroHighlight, Highlight } from "./hero-highlight";
+import { Highlight } from "./hero-highlight";
 
 import { cn } from "../lib/utils";
 
