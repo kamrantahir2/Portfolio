@@ -10,7 +10,7 @@ const Landing = () => {
       <div className="landing bg-black pt-12 ">
         <div className="landing-container lg:pb-12">
           <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
-            <h1 className="md:text-7xl text-6xl lg:text-9xl font-bold text-center text-white relative z-20 mb-4">
+            <h1 className=" md:text-7xl text-6xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4">
               Kamran Tahir
             </h1>
 
@@ -43,7 +43,7 @@ const Landing = () => {
                 minSize={0.4}
                 maxSize={1}
                 particleDensity={1200}
-                className="md:w-full w-4/5 mx-auto h-full"
+                className="md:w-full w-3/5 mx-auto h-full"
                 particleColor="#FFFFFF"
               />
 
@@ -122,7 +122,13 @@ const Landing = () => {
                 <div className="divider"></div>
               </Fade>
               <div className="icons gap-4  m-auto lg:grid-cols-3 grid-cols-2  grid mt-8">
-                <Fade cascade delay={250} duration={750} triggerOnce damping={0.2}>
+                <Fade
+                  cascade
+                  delay={250}
+                  duration={750}
+                  triggerOnce
+                  damping={0.2}
+                >
                   <div className="icon">
                     <img
                       src="./js.png"
@@ -218,7 +224,13 @@ const Landing = () => {
                 <div className="divider"></div>
               </Fade>
               <div className="icons mt-8 grid lg:grid-cols-3 grid-cols-2 gap-8">
-                <Fade cascade delay={250} duration={750} triggerOnce damping={0.2}>
+                <Fade
+                  cascade
+                  delay={250}
+                  duration={750}
+                  triggerOnce
+                  damping={0.2}
+                >
                   <div className="icon">
                     <img
                       src="./postgresql.png"

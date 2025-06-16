@@ -8,6 +8,7 @@ export default {
       fontFamily: {
         raleway: ["raleway", "sans-serif"],
         permanentMarker: ["Permanent Marker", "sans-serif"],
+        gothicExpanded: ["Special Gothic Expanded One", "sans-serif"],
       },
     },
   },
