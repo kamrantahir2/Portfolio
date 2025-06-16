@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Router>
-      <div className="navbar bg-base-100 border-b-2 border-cyan-500 ">
+      <div className="navbar bg-base-100 border-b-2 border-cyan-500 absolute ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

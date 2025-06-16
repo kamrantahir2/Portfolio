@@ -3,18 +3,89 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import { SparklesCore } from "./sparkles";
 
+import { cn } from "../lib/utils";
+import { Spotlight } from "./spotlight-new";
+
 const Landing = () => {
   const navigate = useNavigate();
+  const words = [
+    {
+      text: "Full-stack ",
+    },
+    {
+      text: "developer ",
+    },
+    {
+      text: "with ",
+    },
+    {
+      text: "a ",
+    },
+    {
+      text: "focus ",
+    },
+    {
+      text: "on ",
+    },
+    {
+      text: "intuitive ",
+      className: "text-blue-400",
+    },
+    {
+      text: "design ",
+      className: "text-blue-400",
+    },
+    {
+      text: ", ",
+      className: "",
+    },
+    {
+      text: "practical ",
+      className: "text-purple-400",
+    },
+    {
+      text: "solutions ",
+      className: "text-purple-400",
+    },
+    {
+      text: "and ",
+      className: "",
+    },
+    {
+      text: "solving ",
+      className: "text-green-400",
+    },
+    {
+      text: "real ",
+      className: "text-green-400",
+    },
+    {
+      text: "problems ",
+      className: "text-green-400",
+    },
+    {
+      text: ".",
+      className: "",
+    },
+  ];
+
   return (
-    <div className="">
-      <div className="landing bg-black pt-12 ">
+    <div className="absolute top-20 w-full">
+      <div className="landing  bg-black pt-12 ">
         <div className="landing-container lg:pb-12">
-          <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
+          <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:px-0 px-10">
+            <div
+              className={cn(
+                "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+                "[background-image:linear-gradient(to_right,#171717_2px,transparent_2px),linear-gradient(to_bottom,#171717_2px,transparent_2px)]"
+              )}
+            />
+
             <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4">
               Kamran Tahir
             </h1>
 
-            <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mb-4 ">
+            <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mb- mt-4 ">
               Full-stack developer with a focus on{" "}
               <span className="font-semibold text-blue-400">
                 intuitive design
@@ -43,7 +114,7 @@ const Landing = () => {
                 minSize={0.4}
                 maxSize={1}
                 particleDensity={1200}
-                className="md:w-full w-3/5 mx-auto h-full"
+                className="md:w-full w-3/5 mx-auto h-full rounded-full"
                 particleColor="#FFFFFF"
               />
 
