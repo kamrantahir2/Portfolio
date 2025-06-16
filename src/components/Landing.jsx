@@ -30,7 +30,6 @@ const Landing = () => {
                 repeatType: "mirror",
                 repeatDelay: 0.2,
               }}
-              whileHover={{ scale: 1.1, rotate: 2 }}
             />
           </Slide>
         </div>
