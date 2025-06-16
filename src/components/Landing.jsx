@@ -47,7 +47,7 @@ const Landing = () => {
               .
             </h3>
 
-            <div className="w-[40rem] h-40 relative mt-10">
+            <div className="md:w-[40rem] w-5/6 h-40 relative mt-10">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -60,7 +60,7 @@ const Landing = () => {
                 minSize={0.4}
                 maxSize={1}
                 particleDensity={1200}
-                className="md:w-full w-3/5 mx-auto h-full rounded-full"
+                className="w-full mx-auto h-full rounded-full"
                 particleColor="#FFFFFF"
               />
 
