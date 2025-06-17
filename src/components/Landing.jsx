@@ -84,14 +84,14 @@ const Landing = () => {
 
       <Fade duration={700} cascade triggerOnce>
         <div className="w-8/12 mt-12 m-auto">
-          <h1 className=" text-6xl font-gothicExpanded font-semibold relative z-10">
+          <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-semibold relative z-10">
             About Me
           </h1>
-          <div className="lg:w-3/12 md:w-6/12 w-9/12 relative md:bottom-10 md:left-10 bottom-20 left-8 z-0 h-5 md:h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
+          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
           <Slide duration={800} triggerOnce>
-            <h3 className="mt-8 mb-20 text-2xl lg:ml-28 m-auto leading-relaxed md:text-left col-span-10 lg:col-span-1  lg:w-full w-10/12">
+            <h3 className="mt-8 mb-20 text-xl lg:ml-28 m-auto leading-relaxed md:text-left col-span-10 lg:col-span-1  lg:w-full w-10/12">
               I am a full-stack developer with a passion for problem solving and
               expanding my knowledge. Originally focusing on building backends
               using Java and Spring Boot, I now also build full-stack
