@@ -20,7 +20,7 @@ const Landing = () => {
               )}
             />
 
-            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 md:mb-24 mb-8 pt-56">
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 md:mb-24 mb-8 md:pt-56 pt-36">
               <Highlight className="text-blackdark:text-white">
                 Kamran
               </Highlight>
