@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
-import { SparklesCore } from "./sparkles";
 import { Highlight } from "./hero-highlight";
-
 import { cn } from "../lib/utils";
 
 const Landing = () => {
@@ -21,7 +19,7 @@ const Landing = () => {
               )}
             />
 
-            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-12 pt-56">
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-24 pt-56">
               <Highlight className="text-blackdark:text-white">
                 Kamran
               </Highlight>
@@ -64,8 +62,10 @@ const Landing = () => {
 
       <Fade duration={700} cascade triggerOnce>
         <div className="w-8/12 mt-12 m-auto">
-          <h1 className="font-semibold text-6xl">About Me</h1>
-          <div className="w-3/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 my-4 m-auto"></div>
+          <h1 className=" text-6xl font-gothicExpanded font-semibold relative z-10">
+            About Me
+          </h1>
+          <div className="w-3/12 relative bottom-10 left-10 z-0 h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
           <Slide duration={800} triggerOnce>
