@@ -3,6 +3,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import { Highlight } from "./hero-highlight";
 import { cn } from "../lib/utils";
+import { BackgroundGradient } from "./background-gradient";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -54,6 +55,27 @@ const Landing = () => {
 
               {/* Core component */}
 
+              <div className="justify-center md:justify-start ">
+                <div className="pt-12">
+                  <button
+                    className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
+                    onClick={() => navigate("/projects")}
+                  >
+                    My Projects
+                  </button>
+                  <a href="https://github.com/kamrantahir2" target="_blank">
+                    <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none text-gray-50 w-36 h-12 mx-4">
+                      My Github
+                    </button>
+                  </a>
+                  <button
+                    className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12 my-4"
+                    onClick={() => navigate("/contact")}
+                  >
+                    Contact Me
+                  </button>
+                </div>
+              </div>
               {/* Radial Gradient to prevent sharp edges */}
             </div>
           </div>
@@ -89,30 +111,6 @@ const Landing = () => {
           </Slide>
         </div>
       </Fade>
-
-      <div className="flex justify-center md:justify-start md:ml-48 mt-12">
-        <Slide direction="right" triggerOnce>
-          <div className="">
-            <button
-              className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
-              onClick={() => navigate("/projects")}
-            >
-              My Projects
-            </button>
-            <a href="https://github.com/kamrantahir2" target="_blank">
-              <button className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none text-gray-50 w-36 h-12 mx-4">
-                My Github
-              </button>
-            </a>
-            <button
-              className="bg-gradient-to-t from-indigo-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12 my-4"
-              onClick={() => navigate("/contact")}
-            >
-              Contact Me
-            </button>
-          </div>
-        </Slide>
-      </div>
 
       <div className="mb-40 lg:pt-8">
         <div className="w-8/12 mt-12 m-auto">
