@@ -65,7 +65,7 @@ const Landing = () => {
           <h1 className=" text-6xl font-gothicExpanded font-semibold relative z-10">
             About Me
           </h1>
-          <div className="lg:w-3/12 md:w-6/12  relative md:bottom-10 md:left-10 bottom-20 left-6 z-0 h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
+          <div className="lg:w-3/12 md:w-6/12 w-9/12 relative md:bottom-10 md:left-10 bottom-20 left-8 z-0 h-5 md:h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
           <Slide duration={800} triggerOnce>
