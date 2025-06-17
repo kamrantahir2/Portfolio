@@ -30,7 +30,7 @@ const Landing = () => {
               Tahir
             </h1>
 
-            <h3 className="md:text-2xl text-xl lg:text-3xl text-center text-white relative z-20 mb- mt-4 ">
+            <h3 className="md:text-2xl text-xl lg:text-3xl text-center text-white relative z-20 mb- mt-4 md:mx-0 mx-2">
               Full-stack developer with a focus on{" "}
               <span className="font-semibold text-blue-400">
                 intuitive design
