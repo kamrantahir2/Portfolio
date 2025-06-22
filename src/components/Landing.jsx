@@ -83,7 +83,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <Fade duration={700} cascade triggerOnce>
+      <Fade duration={400} cascade triggerOnce>
         <ShootingStars />
         <StarsBackground />
         <div className="w-8/12 mt-12 m-auto">
@@ -98,7 +98,7 @@ const Landing = () => {
             alt=""
             className="md:w-4/5 w-3/5  lg:ml-36 md:mt-0  mx-auto"
           />
-          <Slide duration={800} triggerOnce damping={2} className="">
+          <Slide duration={200} triggerOnce damping={2} className="">
             <h3 className="md:mt-8 -mt-8 text-2xl leading-relaxed md:text-left lg:w-full md:w-10/12 mx-12 mb-8 te">
               I'm a self-taught full-stack developer with a strong focus on
               building intuitive, responsive web applications using modern
