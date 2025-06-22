@@ -87,21 +87,24 @@ const Landing = () => {
           <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-semibold relative z-10">
             About Me
           </h1>
-          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-8 rounded-ful bg-gradient-to-r from-red-600 to-blue-700 my-4 m-auto"></div>
+          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-8 rounded-ful bg-gradient-to-r from-purple-800 to-blue-700 my-4 m-auto"></div>
         </div>
         <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
           <Slide duration={800} triggerOnce>
             <h3 className="mt-8 mb-20 text-xl lg:ml-28 m-auto leading-relaxed md:text-left col-span-10 lg:col-span-1  lg:w-full w-10/12">
-              I am a full-stack developer with a passion for problem solving and
-              expanding my knowledge. Originally focusing on building backends
-              using Java and Spring Boot, I now also build full-stack
-              applications using React and NodeJS.
+              I'm a self-taught full-stack developer with a strong focus on
+              building intuitive, responsive web applications using modern
+              JavaScript frameworks. With several years of hands-on experience
+              in React, Node.js, and database technologies like MongoDB and
+              PostgreSQL, I enjoy turning ideas into functional, user-friendly
+              software.
               <br />
               <br />
-              As a self-taught developer my biggest motivators are personal
-              projects. By creating applications I am able to challenge myself
-              and teach myself new skills while taking an idea and turning it
-              into a reality.
+              My background in customer service has shaped the way I approach
+              development — always with the user in mind. Whether it's creating
+              tools to streamline real-world workflows or designing clean,
+              engaging interfaces, I aim to build software that’s both practical
+              and easy to use.
             </h3>
             <img
               src="./tools-and-utensils.png"
