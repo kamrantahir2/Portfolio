@@ -90,13 +90,13 @@ const Landing = () => {
           <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-light relative z-10">
             About Me
           </h1>
-          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-5 rounded-ful bg-gradient-to-r from-purple-700 to-blue-700 my-4 m-auto"></div>
+          <div className="w-5/12 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 mt-4 m-auto"></div>
         </div>
         <div className="lg:grid-cols-2 grid-cols-1 grid container md:items-center justify-center">
           <img
             src="./outline.png"
             alt=""
-            className="md:w-4/5 lg:ml-36 md:mt-0 -mt-24"
+            className="md:w-4/5 w-3/5  lg:ml-36 md:mt-0  mx-auto"
           />
           <Slide duration={800} triggerOnce damping={2} className="">
             <h3 className="md:mt-8 -mt-8 text-xl leading-relaxed md:text-left lg:w-full md:w-10/12 mx-12 mb-8">
@@ -126,7 +126,7 @@ const Landing = () => {
             </h1>
           </Slide>
           <Slide direction="down" duration={1} triggerOnce delay={100}>
-            <div className="w-5/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 mt-4 m-auto"></div>
+            <div className="w-5/12 h-0.5  bg-gradient-to-r from-purple-500 to-blue-500 mt-4 m-auto"></div>
           </Slide>
         </div>
 
