@@ -92,14 +92,14 @@ const Landing = () => {
           </h1>
           <div className="w-5/12 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 mt-4 m-auto"></div>
         </div>
-        <div className="lg:grid-cols-2 grid-cols-1 grid container md:items-center justify-center">
+        <div className="lg:grid-cols-2 grid-cols-1 grid container md:items-center justify-center md:-mt-12">
           <img
             src="./outline.png"
             alt=""
             className="md:w-4/5 w-3/5  lg:ml-36 md:mt-0  mx-auto"
           />
           <Slide duration={800} triggerOnce damping={2} className="">
-            <h3 className="md:mt-8 -mt-8 text-xl leading-relaxed md:text-left lg:w-full md:w-10/12 mx-12 mb-8">
+            <h3 className="md:mt-8 -mt-8 text-2xl leading-relaxed md:text-left lg:w-full md:w-10/12 mx-12 mb-8 te">
               I'm a self-taught full-stack developer with a strong focus on
               building intuitive, responsive web applications using modern
               JavaScript frameworks. With several years of hands-on experience
@@ -118,10 +118,10 @@ const Landing = () => {
         </div>
       </Fade>
 
-      <div className="mb-40 lg:pt-8">
-        <div className="w-8/12 mt-12 m-auto">
+      <div className="mb-40 lg:pt-8 ">
+        <div className="md:w-8/12 mt-12 m-auto">
           <Slide direction="up" triggerOnce>
-            <h1 className="font-semibold text-6xl font-gothicExpanded">
+            <h1 className="font-semibold text-4xl font-gothicExpanded ">
               Languages and Tools
             </h1>
           </Slide>
