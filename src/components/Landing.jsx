@@ -92,10 +92,14 @@ const Landing = () => {
           </h1>
           <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-5 rounded-ful bg-gradient-to-r from-purple-700 to-blue-700 my-4 m-auto"></div>
         </div>
-        <div className="md:grid-cols-2 grid-cols- grid container m-auto items-center">
-          <img src="./outline.png" alt="" className="w-4/5 ml-36" />
+        <div className="lg:grid-cols-2 grid-cols-1 grid container md:items-center justify-center">
+          <img
+            src="./outline.png"
+            alt=""
+            className="md:w-4/5 lg:ml-36 md:mt-0 -mt-24"
+          />
           <Slide duration={800} triggerOnce damping={2} className="">
-            <h3 className="mt-8 text-xl leading-relaxed md:text-left lg:w-full w-10/12">
+            <h3 className="md:mt-8 -mt-8 text-xl leading-relaxed md:text-left lg:w-full md:w-10/12 mx-12 mb-8">
               I'm a self-taught full-stack developer with a strong focus on
               building intuitive, responsive web applications using modern
               JavaScript frameworks. With several years of hands-on experience
