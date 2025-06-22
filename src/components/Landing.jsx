@@ -3,7 +3,8 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 import { Highlight } from "./hero-highlight";
 import { cn } from "../lib/utils";
-import { BackgroundGradient } from "./background-gradient";
+import { ShootingStars } from "./shooting-stars";
+import { StarsBackground } from "./stars-background";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -83,15 +84,18 @@ const Landing = () => {
       </div>
 
       <Fade duration={700} cascade triggerOnce>
+        <ShootingStars />
+        <StarsBackground />
         <div className="w-8/12 mt-12 m-auto">
-          <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-semibold relative z-10">
+          <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-light relative z-10">
             About Me
           </h1>
-          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-8 rounded-ful bg-gradient-to-r from-purple-800 to-blue-700 my-4 m-auto"></div>
+          <div className="lg:w-3/12 md:w-6/12 w-10/12 relative md:bottom-10 md:left-10 bottom-10 left-8 z-0 h-8 md:h-5 rounded-ful bg-gradient-to-r from-purple-700 to-blue-700 my-4 m-auto"></div>
         </div>
-        <div className="grid m-auto lg:grid-cols-2 grid-cols-1 container">
-          <Slide duration={800} triggerOnce>
-            <h3 className="mt-8 mb-20 text-xl lg:ml-28 m-auto leading-relaxed md:text-left col-span-10 lg:col-span-1  lg:w-full w-10/12">
+        <div className="md:grid-cols-2 grid-cols- grid container m-auto items-center">
+          <img src="./outline.png" alt="" className="w-4/5 ml-36" />
+          <Slide duration={800} triggerOnce damping={2} className="">
+            <h3 className="mt-8 text-xl leading-relaxed md:text-left lg:w-full w-10/12">
               I'm a self-taught full-stack developer with a strong focus on
               building intuitive, responsive web applications using modern
               JavaScript frameworks. With several years of hands-on experience
@@ -106,19 +110,18 @@ const Landing = () => {
               engaging interfaces, I aim to build software that’s both practical
               and easy to use.
             </h3>
-            <img
-              src="./tools-and-utensils.png"
-              className=" w-4/12 md:w-6/12 m-auto lg:w-8/12 lg:ml-32 rounded-full"
-              alt=""
-            />
           </Slide>
         </div>
       </Fade>
 
       <div className="mb-40 lg:pt-8">
         <div className="w-8/12 mt-12 m-auto">
-          <Slide triggerOnce cascade>
-            <h1 className="font-semibold text-6xl">Languages and Tools</h1>
+          <Slide direction="up" triggerOnce>
+            <h1 className="font-semibold text-6xl font-gothicExpanded">
+              Languages and Tools
+            </h1>
+          </Slide>
+          <Slide direction="down" duration={1} triggerOnce delay={100}>
             <div className="w-5/12 h-0.5 rounded-full bg-gradient-to-r from-green-500 to-blue-300 mt-4 m-auto"></div>
           </Slide>
         </div>

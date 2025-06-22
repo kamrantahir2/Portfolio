@@ -9,6 +9,7 @@ export default {
         raleway: ["raleway", "sans-serif"],
         permanentMarker: ["Permanent Marker", "sans-serif"],
         gothicExpanded: ["Special Gothic Expanded One", "sans-serif"],
+        oxanium: ["Oxanium", "sans-serif"],
       },
       keyframes: {
         "logo-cloud": {
