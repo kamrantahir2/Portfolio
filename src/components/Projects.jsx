@@ -35,11 +35,11 @@ const Projects = () => {
   return (
     <div className="">
       <div className="bg-black py-20 lg:py-40 portfolio-header mb-12">
-        <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
+        <h1 className="md:text-7xl text-6xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
           My <Highlight>Projects</Highlight>
         </h1>
 
-        <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
+        <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
           Explore real-world applications I’ve built to learn, solve, and
           improve. This page grows as I grow, with new tools, better design, and
           smarter code added regularly.
@@ -144,7 +144,7 @@ const Projects = () => {
           ) : null}
         </AnimatePresence>
         <Fade triggerOnce>
-          <ul className="md:max-w-6xl max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
+          <ul className="md:max-w-6xl max-w-5/6 mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
