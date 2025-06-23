@@ -46,7 +46,7 @@ const Projects = () => {
         </h2>
       </div>
 
-      <Fade className=" mb-24" triggerOnce>
+      <div className=" mb-24" triggerOnce>
         <AnimatePresence>
           {active && typeof active === "object" && (
             <motion.div
@@ -143,43 +143,45 @@ const Projects = () => {
             </div>
           ) : null}
         </AnimatePresence>
-        <ul className="md:max-w-7xl max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
-          {cards.map((card, index) => (
-            <motion.div
-              layoutId={`card-${card.title}-${id}`}
-              key={card.title}
-              onClick={() => setActive(card)}
-              className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
-            >
-              <div className="flex gap-4 flex-col  w-full">
-                <motion.div layoutId={`image-${card.title}-${id}`}>
-                  <img
-                    width={100}
-                    height={100}
-                    src={card.image}
-                    alt={card.title}
-                    className="h-60 w-full  rounded-lg object-cover object-top"
-                  />
-                </motion.div>
-                <div className="flex justify-center items-center flex-col">
-                  <motion.h3
-                    layoutId={`title-${card.title}-${id}`}
-                    className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
-                  >
-                    {card.title}
-                  </motion.h3>
-                  <motion.p
-                    layoutId={`description-${card.description}-${id}`}
-                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
-                  >
-                    {card.description}
-                  </motion.p>
+        <Fade triggerOnce>
+          <ul className="md:max-w-6xl max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
+            {cards.map((card, index) => (
+              <motion.div
+                layoutId={`card-${card.title}-${id}`}
+                key={card.title}
+                onClick={() => setActive(card)}
+                className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+              >
+                <div className="flex gap-4 flex-col  w-full">
+                  <motion.div layoutId={`image-${card.title}-${id}`}>
+                    <img
+                      width={100}
+                      height={100}
+                      src={card.image}
+                      alt={card.title}
+                      className="h-60 w-full  rounded-lg object-cover object-top"
+                    />
+                  </motion.div>
+                  <div className="flex justify-center items-center flex-col">
+                    <motion.h3
+                      layoutId={`title-${card.title}-${id}`}
+                      className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                    >
+                      {card.title}
+                    </motion.h3>
+                    <motion.p
+                      layoutId={`description-${card.description}-${id}`}
+                      className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                    >
+                      {card.description}
+                    </motion.p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </ul>
-      </Fade>
+              </motion.div>
+            ))}
+          </ul>
+        </Fade>
+      </div>
     </div>
   );
 };
