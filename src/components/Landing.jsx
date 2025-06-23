@@ -56,7 +56,7 @@ const Landing = () => {
 
               {/* Core component */}
 
-              <div className="">
+              <div className="relative z-[1]">
                 <div className="pt-12">
                   <button
                     className="bg-gradient-to-l from-purple-700 to-cyan-700 bordehover:bg-gradient-to-t hover:from-indigo-900 hover:to-cyan-900 border-none  text-gray-50 w-36 h-12"
@@ -267,6 +267,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
+      <ShootingStars />
+      <StarsBackground />
     </div>
   );
 };
