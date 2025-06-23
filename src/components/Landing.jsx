@@ -21,7 +21,7 @@ const Landing = () => {
               )}
             />
 
-            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 md:mb-24 mb-8 md:pt-56 pt-36">
+            <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
               <Highlight className="text-blackdark:text-white">
                 Kamran
               </Highlight>
@@ -84,8 +84,6 @@ const Landing = () => {
       </div>
 
       <Fade duration={400} cascade triggerOnce>
-        <ShootingStars />
-        <StarsBackground />
         <div className="w-8/12 mt-12 m-auto">
           <h1 className=" md:text-6xl text-5xl font-gothicExpanded font-light relative z-10">
             About Me
