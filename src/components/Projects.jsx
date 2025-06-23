@@ -1,6 +1,7 @@
 import { projects } from "../data";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useEffect } from "react";
+import { Highlight } from "./hero-highlight";
 
 const Projects = () => {
   // useEffect(() => {
@@ -10,21 +11,15 @@ const Projects = () => {
   return (
     <div className="">
       <div className="bg-black py-20 lg:py-40 portfolio-header">
-        <Slide triggerOnce direction="left" cascade duration={1000}>
-          <h1
-            className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-orange-500 to-yellow-300 
-      
-      text-transparent bg-clip-text font-permanentMarker tracking-widest p-4"
-          >
-            My Projects
-          </h1>
-          <div className="w-6/12 lg:w-3/12 h-1 bg-gradient-to-r from-green-500 to-blue-300 mx-auto my-8"></div>
+        <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
+          My <Highlight>Projects</Highlight>
+        </h1>
 
-          <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
-            Here you will find the various projects that I have built. This list
-            is ever-growing so check back regularly to see my latest works.
-          </h2>
-        </Slide>
+        <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-2xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
+          Explore real-world applications I’ve built to learn, solve, and
+          improve. This page grows as I grow, with new tools, better design, and
+          smarter code added regularly.
+        </h2>
       </div>
 
       <Fade cascade triggerOnce duration={750}>

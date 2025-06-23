@@ -116,7 +116,7 @@ const Landing = () => {
         </div>
       </Fade>
 
-      <div className="mb-40 lg:pt-8 ">
+      <div className="mb-40 lg:-mt-32 ">
         <div className="md:w-8/12 mt-12 m-auto">
           <Slide direction="up" triggerOnce>
             <h1 className="font-semibold text-4xl font-gothicExpanded ">
