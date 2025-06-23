@@ -5,7 +5,7 @@ export const projects = [
     description:
       "This is my portfolio website built to showcase my various projects. This website was built using React and styled using Tailwind CSS and Daisy UI as well as animations using Framer Motion and React Awesome Reveal.",
     image: "./portfolio.png",
-    link: "https://kamran-tahir-portfolio.netlify.app//",
+    link: "https://kamran-tahir-portfolio.netlify.app/",
     tags: [
       "JavaScript",
       "React",

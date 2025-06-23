@@ -34,7 +34,7 @@ const Projects = () => {
 
   return (
     <div className="">
-      <div className="bg-black py-20 lg:py-40 portfolio-header">
+      <div className="bg-black py-20 lg:py-40 portfolio-header mb-12">
         <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
           My <Highlight>Projects</Highlight>
         </h1>
@@ -46,7 +46,7 @@ const Projects = () => {
         </h2>
       </div>
 
-      <>
+      <Fade className=" mb-24" triggerOnce>
         <AnimatePresence>
           {active && typeof active === "object" && (
             <motion.div
@@ -83,7 +83,7 @@ const Projects = () => {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+                className="w-full max-w-[500px]  max-h-[70%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
@@ -96,7 +96,7 @@ const Projects = () => {
                 </motion.div>
 
                 <div>
-                  <div className="flex justify-between items-start p-4">
+                  <div className=" justify-between items-start p-4">
                     <div className="">
                       <motion.h3
                         layoutId={`title-${active.title}-${id}`}
@@ -106,7 +106,7 @@ const Projects = () => {
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-neutral-600 dark:text-neutral-400 text-base"
+                        className="text-neutral-600 dark:text-neutral-400 text-base md:mb-4 mb-8"
                       >
                         {active.description}
                       </motion.p>
@@ -117,11 +117,12 @@ const Projects = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      href={active.ctaLink}
+                      href={active.link}
                       target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                      rel="noopener noreferrer"
+                      className="px-4 py-3 text-sm rounded-lg font-bold bg-green-500 text-white"
                     >
-                      {active.ctaText}
+                      Learn More
                     </motion.a>
                   </div>
                   <div className="pt-4 relative px-4">
@@ -142,7 +143,7 @@ const Projects = () => {
             </div>
           ) : null}
         </AnimatePresence>
-        <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+        <ul className="md:max-w-7xl max-w-full mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
           {cards.map((card, index) => (
             <motion.div
               layoutId={`card-${card.title}-${id}`}
@@ -178,7 +179,7 @@ const Projects = () => {
             </motion.div>
           ))}
         </ul>
-      </>
+      </Fade>
     </div>
   );
 };
