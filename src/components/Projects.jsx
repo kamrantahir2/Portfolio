@@ -8,6 +8,7 @@ import { useOutsideClick } from "../hooks/use-outside-click";
 import { cn } from "../lib/utils";
 import { ShootingStars } from "./shooting-stars";
 import { StarsBackground } from "./stars-background";
+import { IoClose } from "react-icons/io5";
 
 const Projects = () => {
   const [active, setActive] = useState(null);
@@ -106,10 +107,10 @@ const Projects = () => {
                     duration: 0.05,
                   },
                 }}
-                className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+                className=" absolute top-2 right-6 lg:hidden items-center justify-center bg-transparent rounded-full h-8 w-8 p-"
                 onClick={() => setActive(null)}
               >
-                <CloseIcon />
+                <IoClose className="text-2xl" />
               </motion.button>
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
@@ -137,7 +138,7 @@ const Projects = () => {
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-neutral-600 dark:text-neutral-400 text-base md:mb-4 mb-12"
+                        className="text-neutral-600 dark:text-neutral-400 text-base  mb-12"
                       >
                         {active.description}
                       </motion.p>
