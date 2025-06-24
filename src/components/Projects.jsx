@@ -5,6 +5,7 @@ import { Highlight } from "./hero-highlight";
 import React, { useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../hooks/use-outside-click";
+import { cn } from "../lib/utils";
 
 const Projects = () => {
   const [active, setActive] = useState(null);
@@ -33,20 +34,48 @@ const Projects = () => {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="">
-      <div className="bg-black py-20 lg:py-40 portfolio-header mb-12">
-        <h1 className="md:text-7xl text-6xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
-          My <Highlight>Projects</Highlight>
+    <div className="absolute top-20 ">
+      <div className="relative  h-screen bg-white dark:bg-black">
+        <div
+          className={cn(
+            "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+            "[background-image:linear-gradient(to_right,#171717_2px,transparent_2px),linear-gradient(to_bottom,#171717_2px,transparent_2px)]"
+          )}
+        />
+
+        <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
+          My
+          <span className="hidden md:inline">
+            {" "}
+            <Highlight className="text-blackdark:text-white">
+              Projects
+            </Highlight>
+          </span>
+        </h1>
+        <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4 md:hidden ">
+          <Highlight className="text-blackdark:text-white">Projects</Highlight>
         </h1>
 
-        <h2 className=" text-center lg:text-left mt-12 lg:mt-32 md:mt-16 text-xl md:text-3xl tracking-wide w-9/12  m-auto font-medium ">
-          Explore real-world applications I’ve built to learn, solve, and
-          improve. This page grows as I grow, with new tools, better design, and
-          smarter code added regularly.
-        </h2>
+        <h3 className="md:text-2xl text-xl lg:text-3xl text-center text-white relative z-20 mt-12 md:mx-12 mx-8">
+          Browse through a constantly expanding collection of apps and
+          experiments that showcase my skills, creativity, and growth as a
+          full-stack developer.
+        </h3>
+
+        <div className="h-40 relative mt-10">
+          {/* Gradients */}
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+          {/* Core component */}
+
+          {/* Radial Gradient to prevent sharp edges */}
+        </div>
       </div>
 
-      <div className=" mb-24" triggerOnce>
+      <div className=" mb-24 mt-16" triggerOnce>
         <AnimatePresence>
           {active && typeof active === "object" && (
             <motion.div
@@ -144,7 +173,7 @@ const Projects = () => {
           ) : null}
         </AnimatePresence>
         <Fade triggerOnce>
-          <ul className="md:max-w-6xl max-w-5/6 mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 items-start gap-24 ">
+          <ul className="md:max-w-6xl max-w-5/6 mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 items-start gap-48 ">
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
