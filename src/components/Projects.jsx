@@ -6,6 +6,8 @@ import React, { useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../hooks/use-outside-click";
 import { cn } from "../lib/utils";
+import { ShootingStars } from "./shooting-stars";
+import { StarsBackground } from "./stars-background";
 
 const Projects = () => {
   const [active, setActive] = useState(null);
@@ -35,7 +37,7 @@ const Projects = () => {
 
   return (
     <div className="absolute top-20 ">
-      <div className="relative  h-screen bg-white dark:bg-black">
+      <div className="relative h-screen bg-white dark:bg-black">
         <div
           className={cn(
             "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
@@ -56,7 +58,7 @@ const Projects = () => {
           <Highlight className="text-blackdark:text-white">Projects</Highlight>
         </h1>
 
-        <h3 className="md:text-2xl text-xl lg:text-3xl text-center text-white relative z-20 mt-12 md:mx-12 mx-8">
+        <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mt-32 md:mt-12 md:mx-12 mx-8">
           Browse through a constantly expanding collection of apps and
           experiments that showcase my skills, creativity, and growth as a
           full-stack developer.
@@ -75,7 +77,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className=" mb-24 mt-16" triggerOnce>
+      <div className=" mb-24 mt-16 relative z-[3]" triggerOnce>
         <AnimatePresence>
           {active && typeof active === "object" && (
             <motion.div
@@ -173,7 +175,7 @@ const Projects = () => {
           ) : null}
         </AnimatePresence>
         <Fade triggerOnce>
-          <ul className="md:max-w-6xl max-w-5/6 mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 items-start gap-48 ">
+          <ul className="md:max-w-6xl max-w-5/6 mx-auto w-11/12 grid grid-cols-1 md:grid-cols-2 items-start md:gap-48 gap-12 ">
             {cards.map((card, index) => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
@@ -211,6 +213,8 @@ const Projects = () => {
           </ul>
         </Fade>
       </div>
+      <ShootingStars />
+      <StarsBackground />
     </div>
   );
 };
