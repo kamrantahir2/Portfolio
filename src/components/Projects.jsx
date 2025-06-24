@@ -152,7 +152,9 @@ const Projects = () => {
                       href={active.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-3 text-sm rounded-lg font-bold bg-green-500 text-white"
+                      className={
+                        "px-4 py-3 text-sm rounded-lg font-semi bg-gradient-to-l from-purple-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-purple-900 hover:to-cyan-900 border-none text-white"
+                      }
                     >
                       Learn More
                     </motion.a>
