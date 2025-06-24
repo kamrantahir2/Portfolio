@@ -115,7 +115,7 @@ const Projects = () => {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  max-h-[80%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
+                className="w-full max-w-[500px]  max-h-[90%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
