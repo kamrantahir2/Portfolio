@@ -123,11 +123,11 @@ const Projects = () => {
                     height={200}
                     src={active.image}
                     alt={active.title}
-                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top border-b-2 "
                   />
                 </motion.div>
 
-                <div>
+                <div className="border-t-2 border-cyan-600">
                   <div className=" justify-between items-start p-4">
                     <div className="">
                       <motion.h3
