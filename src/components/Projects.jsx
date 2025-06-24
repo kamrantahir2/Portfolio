@@ -38,7 +38,7 @@ const Projects = () => {
 
   return (
     <div className="absolute top-20 ">
-      <div className="relative h-screen bg-white dark:bg-black">
+      <div className="relative h-screen bg-white dark:bg-black border-b-2 border-sky-400">
         <div
           className={cn(
             "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
@@ -107,7 +107,7 @@ const Projects = () => {
                     duration: 0.05,
                   },
                 }}
-                className=" absolute top-2 right-6 lg:hidden items-center justify-center bg-transparent rounded-full h-8 w-8 p-"
+                className=" absolute top-2 right-6 lg:hidden items-center justify-center bg-transparent rounded-full h-8 w-8"
                 onClick={() => setActive(null)}
               >
                 <IoClose className="text-2xl" />
@@ -115,7 +115,7 @@ const Projects = () => {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  max-h-[70%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
+                className="w-full max-w-[500px]  max-h-[80%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
@@ -132,13 +132,13 @@ const Projects = () => {
                     <div className="">
                       <motion.h3
                         layoutId={`title-${active.title}-${id}`}
-                        className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                        className="font-medium text-neutral-700 dark:text-neutral-200 text-lg md:text-xl my-4 underline underline-offset-8"
                       >
                         {active.title}
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-neutral-600 dark:text-neutral-400 text-base  mb-12"
+                        className="text-neutral-600 dark:text-neutral-400 md:text-lg  mb-12"
                       >
                         {active.description}
                       </motion.p>
@@ -205,7 +205,7 @@ const Projects = () => {
                       layoutId={`description-${card.description}-${id}`}
                       className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
                     >
-                      {card.description}
+                      {card.headline}
                     </motion.p>
                   </div>
                 </div>
