@@ -3,7 +3,7 @@ export const projects = [
     title: "Portfolio Website (This Website)",
     subtitle: "Portfolio website displaying my various projects",
     description:
-      "A responsive portfolio website built with React to showcase my full-stack projects and development skills. It features smooth animations using Framer Motion and React Awesome Reveal, and is styled with Tailwind CSS and DaisyUI for a clean, modern look. The site highlights my work in areas like user authentication, database integration, and frontend design, while offering an engaging, mobile-friendly user experience.",
+      "A responsive React portfolio showcasing full-stack projects with smooth animations (Framer Motion, React Awesome Reveal) and styled using Tailwind CSS and DaisyUI. It highlights skills in user authentication, database integration, and frontend design, delivering a clean, mobile-friendly experience.",
     headline:
       "A responsive portfolio website built with React to showcase my full-stack projects and development skills ...",
     image: "./portfolio.png",
@@ -21,7 +21,7 @@ export const projects = [
     title: "Article Saver",
     subtitle: "Keep track of useful links",
     description:
-      "Article Saver is a full-stack web application designed to help users collect and organize study-related articles in one centralized location. It was originally built to support my own academic workflow, enabling me to save valuable resources I came across during research. The app also includes a social element—users can explore articles saved by others and bookmark them for future reference. With user authentication and persistent data storage, it ensures each user’s collection is secure, organized, and easily accessible.",
+      "Article Saver is a full-stack web app that helps users collect and organize study articles in one place. Originally built to support my academic workflow, it allows users to save, explore, and bookmark articles shared by others. Featuring user authentication and persistent storage, it ensures secure and easy access to personalized article collections.",
     headline:
       "Article Saver is a full-stack web application designed to help users collect and organize study-related ...",
     image: "./allArticles.png",
@@ -40,7 +40,7 @@ export const projects = [
     title: "Recipe Finder",
     subtitle: "Find new and exciting recipes",
     description:
-      "Recipe Finder is a responsive web application that helps users discover new and exciting recipes based on ingredients they have on hand. Users simply enter the ingredients they want to use and, optionally, select a preferred cuisine. The app then returns up to 100 recipe suggestions, making it easy to explore meal ideas quickly and efficiently.",
+      "Recipe Finder is a responsive web app that helps users discover recipes based on available ingredients and optional cuisine preferences. By entering ingredients, users receive up to 100 recipe suggestions, enabling quick and easy meal planning.",
     headline:
       "Recipe Finder is a responsive web application that helps users discover new and exciting recipes ...",
     image: "./recipeFinder.png",
@@ -60,7 +60,7 @@ export const projects = [
     title: "Meal Planner",
     subtitle: "Plan your meals for the week",
     description:
-      "Meal Planner is a command-line application built using Java, designed to help users plan their weekly meals and streamline grocery shopping. Users start by entering their favorite meals along with their ingredients. They can then schedule meals for each day of the week, and the program automatically generates a consolidated shopping list based on the selected meals, making meal planning simple and efficient.",
+      "Meal Planner is a Java-based command-line app that helps users plan weekly meals and simplify grocery shopping. Users add favorite meals with ingredients, schedule them for the week, and the app generates a consolidated shopping list for easy meal preparation.",
     headline:
       "Meal Planner is a command-line application built using Java, designed to help users plan their weekly meals ...",
     image: "./addMeals.png",
@@ -71,7 +71,7 @@ export const projects = [
     title: "Cashing Up Program",
     subtitle: "Count your tills quickly and efficiently",
     description:
-      "Cashing Up Program is a Java-based application built with JavaFX and Scene Builder to streamline the till counting process for retail stores. By automating calculations based on user input, it significantly reduces the risk of human error. The application has successfully reduced till counting time by approximately 66% and is currently in use by a local store, improving both speed and accuracy in daily cashing-up operations. ",
+      "Cashing Up Program is a Java application built with JavaFX and Scene Builder that streamlines till counting for retail stores. By automating calculations, it reduces human error and cuts counting time by about 66%. Currently used by a local store, it improves speed and accuracy in daily cashing-up tasks. ",
     headline:
       "Cashing Up Program is a Java-based application built with JavaFX and Scene Builder to streamline the till counting process ...",
     image: "./cashingUpProgram.png",
@@ -82,7 +82,7 @@ export const projects = [
     title: "Library Management System",
     subtitle: "Manage your library stock",
     description:
-      "The Library Management System API allows users to manage a PostgreSQL database by adding and deleting books, keeping the catalog up to date. It also supports renting out books to patrons and processing their returns, ensuring smooth and efficient handling of library transactions. This API helps simplify library operations by providing an easy-to-use interface for managing book inventory and lending activities.",
+      "Library Management System API enables users to manage a PostgreSQL database by adding and deleting books to maintain an up-to-date catalog. It also supports book rentals and returns, ensuring smooth and efficient library transactions. The API simplifies library operations with an intuitive interface for inventory and lending management.",
     headline:
       "The Library Management System API allows users to manage a PostgreSQL database by adding and deleting books ...",
     image: "./library.jpg",
@@ -93,7 +93,7 @@ export const projects = [
     title: "Cinema Management System",
     subtitle: "Manage your cinema room",
     description:
-      "Built using Java, the Cinema Room Manager API enables users to book and return seats in a cinema room efficiently. It also provides real-time statistics, including the percentage of seats booked and daily earnings, helping to monitor occupancy and revenue. This API simplifies cinema seat management by offering an intuitive interface for both booking operations and performance tracking.",
+      "Cinema Room Manager API (Java-based) allows users to book and return cinema seats while providing real-time stats like seat occupancy percentage and daily earnings, streamlining seat management and revenue tracking.",
     headline:
       "Built using Java, the Cinema Room Manager API enables users to book and return seats in a cinema room efficiently ...",
     image: "./cinemaRoom.jpg",
