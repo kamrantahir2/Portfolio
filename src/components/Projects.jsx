@@ -137,7 +137,7 @@ const Projects = () => {
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-neutral-600 dark:text-neutral-400 text-base md:mb-4 mb-8"
+                        className="text-neutral-600 dark:text-neutral-400 text-base md:mb-4 mb-12"
                       >
                         {active.description}
                       </motion.p>
