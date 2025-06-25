@@ -46,7 +46,7 @@ const Projects = () => {
           )}
         />
 
-        <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-2 md:mb-24 mb-8 md:pt-56 pt-36">
+        <h1 className=" md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-[2] md:mb-24 mb-8 md:pt-56 pt-36">
           My
           <span className="hidden md:inline">
             {" "}
@@ -55,11 +55,11 @@ const Projects = () => {
             </Highlight>
           </span>
         </h1>
-        <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-20 mb-4 md:hidden ">
+        <h1 className="md:text-7xl text-7xl lg:text-9xl font-gothicExpanded text-center  text-white relative z-[2] mb-4 md:hidden ">
           <Highlight className="text-blackdark:text-white">Projects</Highlight>
         </h1>
 
-        <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-20 mt-32 md:mt-12 md:mx-12 mx-8">
+        <h3 className="md:text-2xl text-2xl lg:text-3xl text-center text-white relative z-[2] mt-32 md:mt-12 md:mx-12 mx-8">
           Browse through a constantly expanding collection of apps and
           experiments that showcase my skills, creativity, and growth as a
           full-stack developer.
@@ -115,7 +115,7 @@ const Projects = () => {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  max-h-[90%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl"
+                className="w-10/12 md:w-full max-w-[500px]  max-h-[90%] md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden rounded-3xl mx0"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
