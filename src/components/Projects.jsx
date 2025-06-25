@@ -153,7 +153,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={
-                        "px-4 py-3 text-sm rounded-lg font-semi bg-gradient-to-l from-purple-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-purple-900 hover:to-cyan-900 border-none text-white"
+                        "px-4 py-3 text-sm rounded-lg font-semi bg-gradient-to-l from-purple-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-purple-900 hover:to-cyan-900 border-none text-white mb-12"
                       }
                     >
                       Learn More
