@@ -138,7 +138,7 @@ const Projects = () => {
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-neutral-600 dark:text-neutral-400 md:text-lg  mb-24"
+                        className="text-neutral-600 dark:text-neutral-400 md:text-lg  mb-12"
                       >
                         {active.description}
                       </motion.p>
@@ -153,7 +153,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={
-                        "px-4 py-3 text-sm rounded-lg font-semi bg-gradient-to-l from-purple-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-purple-900 hover:to-cyan-900 border-none text-white mb-12"
+                        "px-4 py-3 text-sm rounded-lg font-semi bg-gradient-to-l from-purple-800 to-cyan-700 bordehover:bg-gradient-to-t hover:from-purple-900 hover:to-cyan-900 border-none text-white mb-8"
                       }
                     >
                       Learn More
